@@ -1,0 +1,4 @@
+postfix:AB*CD*+
+prefix:+*AB*CD
+postfix:ABC+^DE/-
+prefix:-^A+BC/DE

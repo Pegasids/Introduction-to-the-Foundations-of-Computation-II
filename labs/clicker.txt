@@ -1,0 +1,11 @@
+Hand-Held Clicker starts.
+Action:p
+Count:1
+Action:p
+Count:2
+Action:r
+Count:0
+Action:p
+Count:1
+Action:e
+Hand-Held Clicker ends.

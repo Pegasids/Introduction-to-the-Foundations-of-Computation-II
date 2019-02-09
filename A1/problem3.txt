@@ -1,0 +1,93 @@
+#Bo Cen and Canopus Tong
+#Lab Section D03 
+#Lecture Section A1
+
+# a)
+def partA(myList):
+  if len(myList) < 2:
+    return -1
+  return myList[0] + myList[1]
+
+The function checks if the length of myList is less than 2. If it is less than 2 the value -1 is returned. If the length of myList is not less than 2 than the sum of the first and second element of myList are also returned.
+
+Best case: O(1)
+Worst case: O(1)
+
+# b)
+def partB(myList):
+  if len(myList) % 2 == 0:
+    partA(myList) + partA(myList)
+  else:
+    partA(myList)
+
+
+The function checks if the length of myList divided by 2 gives a remainder of 0. If it does, it will call back on partA(myList) twice and add the sums together. If the length of myList does not give a remainder of 0, it will simply call back on the partA(myList) function.
+
+Best case: O(1)
+Worst case: O(1)
+
+#c) 
+def partC(myList):
+  max = myList[0]
+  for value in myList:
+    if value > max:
+      max = value
+  print(max)
+  min = myList[0]      
+  for value in myList:
+    if value < min:
+      min = value
+  print(min)  
+  sum = 0
+  for value in myList:
+    sum = sum + value
+  print(sum)
+
+The function finds the maximum value by comparing each value in the list and storing the highest value. The maximum value will be printed. The program then finds the minimum value by comparing each value in the list and storing the lowest value. The minimum value will be printed. All the values in myList are added together and the sum is printed.
+
+Best case: O(1)
+Worst case: O(n)
+
+  
+#d) 
+def partD(myList):
+  i = 1 
+  while i < len(myList):
+    print(myList[i])
+    i = 2*i
+
+While the value of i is smaller than the length of myList, the ith index value in myList will be printed and the value of i will be multiplied by 2. The loop will continue until the variable i becomes bigger or equal to length of myList. In other word, the funtion will print value/values from a list depending on the index i, which adds up in a pattern of 1,2,4,8,16,etc...
+
+Best case: O(1)
+Worst case: O(logn)
+
+    
+#e) 
+def partE(myList, valueToFind):
+  for i in range(len(myList)):
+    if myList[i] == valueToFind:
+      return i
+  return -1
+
+For each value in the range of the length of myList, the value will be checked against valueToFind, and if that value is not found then -1 will be returned. If myList[i] is equal to valueToFind or valueToFind is found in myList, then the value of i (the index of valueToFind in myList) will be returned. 
+
+Best case: O(1)
+Worst case: O(n)
+
+
+#f) 
+def partF(myList):
+  products = []
+  for value1 in myList:
+    for value2 in myList:
+      products.append(value1*value2)
+  sum = 0
+  for product in products:
+    sum = sum + product
+  return sum
+
+For each value in the list, each value will multiply by each value in the list again and will append the values into the list products. The function will then add up all the products in the list products and return the sum. 
+
+Best case: O(1)
+Worst case: O(n^2)
+  

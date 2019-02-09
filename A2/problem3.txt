@@ -1,0 +1,28 @@
+Part_a.
+
+Explanation:
+This function takes a list as an input and return a reversed version of the list.
+
+Time complexity:
+O(n)
+
+
+Part_b.
+
+Explanation:
+This function checks whether the input string has pair(s) of open and close parentheses, square brackets or braces.
+It will return True if there is/are valid pair(s) of open and close parentheses, square brackets or braces and return False if there isn't.
+An input string without any pair of open and close parentheses, square brackets or braces, the function will return True too.
+
+Time complexity:
+O(n^2)
+
+
+Part_c.
+
+Explanation:
+This function checks wheather the input string is a palindrome. The function returns True if it is a palindrome and returns False if it is 
+not a palindrome.
+
+Time complexity:
+O(n)
